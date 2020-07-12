@@ -1,0 +1,16 @@
+## Read input as specified in the question.
+## Print output as specified in the question.
+a=input()
+s=list(a)
+i=1
+n=len(s)
+prev=s[0]
+print(prev,end='')
+while i<=n-1:
+    if(s[i]==prev):
+        i=i+1
+    else:
+        prev=s[i]
+        print(s[i],end='')
+        i=i+1
+    
