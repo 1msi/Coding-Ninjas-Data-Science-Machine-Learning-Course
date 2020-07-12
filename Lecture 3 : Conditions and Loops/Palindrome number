@@ -1,0 +1,17 @@
+def checkPalindrome(n):
+    rev=0
+    while n!=0: 
+        rev=(rev*10)+(n%10)
+        n=n//10 
+    if rev==num:
+        return True
+    else:
+        return False
+    
+		
+num = int(input())
+isPalindrome = checkPalindrome(num)
+if(isPalindrome):
+	print('true')
+else:
+	print('false')
