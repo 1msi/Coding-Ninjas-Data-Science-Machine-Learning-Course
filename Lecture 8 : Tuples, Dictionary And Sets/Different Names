@@ -1,0 +1,19 @@
+def differentNames(l):
+    d={}
+    for i in l:
+        if i in d:
+            d[i]=d[i]+1
+        else:
+            d[i]=1
+    for i in l:
+        if d[i]==1:
+            del d[i]
+    return d
+# Main
+names=input().strip().split()
+m=differentNames(names)
+if m:
+    for name in m:
+        print(name, m[name])
+else:
+    print(-1)
