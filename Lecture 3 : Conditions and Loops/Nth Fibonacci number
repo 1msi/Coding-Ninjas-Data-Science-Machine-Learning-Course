@@ -1,0 +1,11 @@
+## Read input as specified in the question.
+## Print output as specified in the question.
+
+def fib(n):
+    if n==0 or n==1 or n==2:
+        return n
+    return fib(n-1)+fib(n-2)
+    
+
+n=int(input())
+print(fib(n-1))
