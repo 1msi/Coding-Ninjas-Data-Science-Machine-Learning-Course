@@ -1,0 +1,16 @@
+def maxFreq(l):
+    d={}
+    max=0
+    key=0
+    for i in l:
+        d[i]=d.get(i,0)+1
+        if d.get(i,0)>max:
+            max=d.get(i,0)
+            key=i
+    return key
+        
+
+# Main
+n=int(input())
+l=list(int(i) for i in input().strip().split(' '))
+print(maxFreq(l))
