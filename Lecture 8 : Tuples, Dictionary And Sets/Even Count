@@ -1,0 +1,12 @@
+def evenCount(arr):
+    d={}
+    for i in arr:
+        d[i]=d.get(i,0)+1
+    for i in arr:
+        if d[i]%2==0:
+            return i
+
+# Main
+n=int(input())
+arr=list(int(i) for i in input().strip().split(' '))
+print(evenCount(arr))
