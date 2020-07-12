@@ -1,0 +1,22 @@
+def equilibriumIndex(arr):
+    i=1
+    sumb=arr[0]
+    suma=0
+    for j in range(2,len(arr)):
+        suma=suma+arr[j]
+    while i<len(arr):
+        if(sumb==suma):
+            return i
+        else:
+            sumb=sumb+arr[i];
+            i=i+1
+            if i!=len(arr):
+                suma=suma-arr[i];
+    return -1;
+   
+        
+
+# Main
+n = int(input())
+arr = [int(i) for i in input().strip().split()]
+print(equilibriumIndex(arr))
