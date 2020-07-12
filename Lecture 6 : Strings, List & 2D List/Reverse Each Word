@@ -1,0 +1,8 @@
+l=input().split()
+for i in l:
+    p=list(i)
+    rev=''
+    for i in p:
+        rev=i+rev
+        
+    print(rev,end=' ')
