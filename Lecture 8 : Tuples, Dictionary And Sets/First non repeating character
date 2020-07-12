@@ -1,0 +1,15 @@
+def nonRepeatingChar(string):
+    
+    d={}
+    for i in string:
+        if i in d:
+            d[i]=d[i]+1
+        else:
+            d[i]=1
+    for i in string:
+        if d[i]==1:
+            return i
+
+# Main
+string = input()
+print(nonRepeatingChar(string))
