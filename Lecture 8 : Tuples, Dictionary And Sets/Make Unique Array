@@ -1,0 +1,9 @@
+def duplicateCount(arr):
+    s=set(arr)
+    return len(arr)-len(s)
+    
+
+# Main
+n=int(input())
+arr=list(int(i) for i in input().strip().split(' '))
+print(duplicateCount(arr))
