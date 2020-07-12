@@ -1,0 +1,13 @@
+## Read input as specified in the question.
+## Print output as specified in the question.
+def tobin(n):
+    if n==0:
+        return 
+    tobin(n//2)
+    print(n%2,end='')
+
+n=int(input())
+if n==0:
+    print(0)
+else:
+    tobin(n)
