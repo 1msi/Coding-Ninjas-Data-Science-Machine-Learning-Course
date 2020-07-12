@@ -1,0 +1,22 @@
+n=int(input())
+n2=0 
+n5=0
+i=2
+k=n
+while i<k:
+    if(k//i==0):
+        break
+    else:
+        n2=n2+(k//i)          
+        i=i*2
+i=5
+while i<n:
+    if(n//i==0):
+        break
+    else:
+        n5=n5+(n//i)          
+        i=i*5
+if(n2<n5):
+    print(n2)
+else:
+    print(n5)
