@@ -1,0 +1,11 @@
+## Read input as specified in the question.
+## Print output as specified in the question.
+s=input()
+rev=''
+for i in range(0,len(s)):
+    rev=s[i]+rev
+if(rev==s):
+    print("true")
+else:
+    print("false")
+    
