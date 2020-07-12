@@ -1,0 +1,11 @@
+## Read input as specified in the question
+## Print the required output in given format
+n=int(input())
+i=n
+while i>=1:
+    j=i
+    while j>=1:
+        print(i,end='')
+        j=j-1
+    print()
+    i=i-1
